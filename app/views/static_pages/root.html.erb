@@ -1,0 +1,13 @@
+<% if logged_in? %>
+    <script>
+        window.currentUser = <%= render(
+            "api/users/current_user.json.jbuilder",
+            user: current_user
+        ).html_safe %>
+    </script>
+<% end %>
+
+
+<main id="root">
+    <h2>This is broke</h2>
+</main>

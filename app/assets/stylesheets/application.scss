@@ -1,0 +1,217 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+@font-face {
+    font-family: 'interstatebold';
+    src: font-url('interstate_bold-webfont.woff2') format('woff2');
+    src: font-url('interstate_bold-webfont.woff') format('woff');
+    src: font-url('interstate_bold.otf') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Interstate Black Comp';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Interstate Black Comp'), font-url('interstate-black-comp-58b64117a2ad9.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Interstate Black Cond';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Interstate Black Cond'), font-url('interstate-black-cond-58b642507872b.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Interstate Light Cond';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Interstate Light Cond'), font-url('interstate-light-cond-58b64220b1490.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Interstate Regular Comp';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Interstate Regular Comp'), font-url('interstate-regular-comp-58b641cc0aca1.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Interstate Regular Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Interstate Regular Italic'), font-url('interstate-regular-italic-58b641ecad88f.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Interstate UltraBlack Comp';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Interstate UltraBlack Comp'), font-url('interstate-ultrablack-comp-58b64130a8cbf.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Interstate Bold Cond';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Interstate Bold Cond'), font-url('interstate-bold-cond-58b64162258ca.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Interstate ExtraLight Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Interstate ExtraLight Italic'), font-url('interstate-extralight-italic-58b642045546b.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Interstate Light Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Interstate Light Italic'), font-url('interstate-light-italic-58b64147957e5.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Interstate Thin Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Interstate Thin Italic'), font-url('interstate-thin-italic-58b641b2d5a92.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'interstateextralight';
+    src: font-url('interstate_extralight_regular-webfont.woff2') format('woff2'),
+        font-url('interstate_extralight_regular-webfont.woff') format('woff'),
+        font-url('interstate_extralight_regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lucida_granderegular';
+    src: url('lucidagrande-webfont.woff2') format('woff2'),
+        url('lucidagrande-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lucida_grandebold';
+    src: url('lucidagrandebold-webfont.woff2') format('woff2'),
+        url('lucidagrandebold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    height: 100%;
+}
+
+ body {
+     background-color: #F1F2F1;
+
+    //  width: 80%;
+     height: 100%;
+     margin: 0 auto;
+ }
+
+button:focus {
+    outline: 0;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.main-container {
+    display: flex;
+    // width: 1920px;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    // padding: 0 30px;
+}
+
+ .main-box {
+    display: flex;
+    // position: absolute;
+    height: 100%;
+    min-width: 1240px;
+    // width: 64.5%;
+    // left: 17.75%;
+    // right: 17%;
+    margin: 0 auto;
+    background-color: #FEFFFE;
+    text-align: center;
+    flex-direction: column;
+ }
+
+ .content {
+     display: flex;
+     height: 100%;
+     min-width: 1240px;
+     flex-direction: column;
+     margin: 0 auto;
+     background-color: #F1F2F1;
+ }
+
+.un:hover {
+    cursor: no-drop;
+}
+
+//  @media only screen and (max-width: 1280px) {
+//      .main-box {
+//          display: flex;
+//          position: absolute;
+//          margin: 0 auto;
+//          height: 100%;
+//         //  width: 1100px;
+//     width: 64.5%;
+//     left: 17.75%;
+//         //  right: 17%;
+//         text-align: center;
+//         flex-direction: column;
+//      }
+//  }
+
+//  @media only screen and (max-width: 1100px) {
+//     .main-box {
+//         display: flex;
+//         position: absolute;
+//         margin: 0 auto;
+//         height: 100%;
+//         // width: 950px;
+//     width: 64.5%;
+//     left: 17.75%;
+//         // right: 17%;
+//         text-align: center;
+//         flex-direction: column;
+//     }
+//  }
